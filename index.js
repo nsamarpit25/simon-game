@@ -64,7 +64,6 @@ function checkUsrInput() {
 function GameOver() {
   usrList = [];
   compList = [];
-  level = 0;
   $("body").addClass("red");
   setTimeout(() => {
     $("body").removeClass("red");
@@ -72,4 +71,5 @@ function GameOver() {
   $("h1").text(
     `Game over at level ${level}. Press any key or Start Button to start again`
   );
+  level = 0;
 }
