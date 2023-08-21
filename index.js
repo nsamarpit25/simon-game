@@ -25,7 +25,7 @@ $("body").on("keypress", function () {
 $("#start").on("click", function () {
   buttonPressed("#start");
   if ((usrList = [])) {
-    setTimeout(randomButton, 500);
+    setTimeout(randomButton, 300);
   }
 });
 
@@ -53,7 +53,7 @@ function checkUsrInput() {
     }
   } else if (usrList.length === compList.length) {
     if (usrList.toString === compList.toString) {
-      setTimeout(randomButton, 1000);
+      setTimeout(randomButton, 300);
     } else {
       GameOver();
     }
