@@ -36,7 +36,7 @@ function buttonPressed(btn) {
     $(btn).removeClass("pressed");
   }, 100);
  }
-// This function will automatically random button to computer List.
+// This function will automatically add random button to computer List.
 function randomButton() {
   let randomIndex = Math.floor(Math.random() * buttons.length);
   compList.push(buttons[randomIndex]);
